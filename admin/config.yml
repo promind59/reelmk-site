@@ -14,6 +14,49 @@ media_folder: "uploads"
 public_folder: "/uploads"
 
 collections:
+  # ---------- ENVOIS À CLAUDE ----------
+  - name: "envois"
+    label: "📤 Envois à Claude"
+    label_singular: "envoi"
+    description: "Dépose ici tes enregistrements bruts et dis ce que tu veux en faire. Ensuite écris à Claude « traite mes envois » : il prépare les vidéos et les met en ligne. Ces fichiers ne sont pas visibles sur le site public."
+    folder: "envois"
+    create: true
+    delete: true
+    format: "json"
+    extension: "json"
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}{{minute}}-{{slug}}"
+    media_folder: "/envois/fichiers"
+    public_folder: "/envois/fichiers"
+    summary: "{{statut}} · {{title}} · {{date | date('DD/MM/YYYY')}}"
+    sortable_fields: ["date", "title", "statut"]
+    fields:
+      - {label: "Titre de l'envoi", name: "title", widget: "string", hint: "Ex. : Tournage match RC Lens, rush studio…"}
+      - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm", date_format: "DD/MM/YYYY", time_format: "HH:mm"}
+      - label: "Fichiers"
+        name: "fichiers"
+        widget: "list"
+        allow_add: true
+        hint: "Vidéos, photos ou sons. 50 Mo max par fichier."
+        field: {label: "Fichier", name: "fichier", widget: "file", media_library: {config: {multiple: false}}}
+      - label: "Où le mettre sur le site"
+        name: "destination"
+        widget: "select"
+        required: false
+        options:
+          - {label: "Showreel (vidéo principale)", value: "showreel"}
+          - {label: "Vidéo de fond de l'accueil", value: "hero"}
+          - {label: "Nouveau projet / remplacer un projet", value: "projet"}
+          - {label: "Carte Services", value: "services"}
+          - {label: "Je ne sais pas, Claude décide", value: "libre"}
+      - {label: "Ce que tu veux en faire", name: "note", widget: "text", required: false, hint: "Ex. : coupe les 3 premières secondes, mets-le en projet 2 « Match day », catégorie Sport."}
+      - label: "Statut"
+        name: "statut"
+        widget: "select"
+        default: "À traiter"
+        options: ["À traiter", "En cours", "En ligne"]
+      - {label: "Réponse de Claude", name: "retour", widget: "text", required: false, hint: "Rempli par Claude après traitement."}
+
+  # ---------- CONTENU DU SITE ----------
   - name: "site"
     label: "Site Réel MK"
     files:

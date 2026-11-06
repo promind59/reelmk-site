@@ -10,3 +10,10 @@
   for = "/uploads/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+
+# Les enregistrements envoyés à Claude ne sont pas publics
+[[redirects]]
+  from = "/envois/*"
+  to = "/404"
+  status = 404
+  force = true
