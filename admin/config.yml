@@ -67,7 +67,8 @@ collections:
         fields:
           # ---------- ACCUEIL ----------
           - {label: "Accueil — Accroche", name: "heroTitle", widget: "text"}
-          - {label: "Accueil — Vidéo de fond (MP4, 20 Mo max)", name: "heroVideo", widget: "file", required: false}
+          - {label: "Accueil — Fond plein écran (vidéo horizontale)", name: "heroBg", widget: "file", required: false}
+          - {label: "Accueil — Carte vidéo verticale (9:16, à droite)", name: "heroVideo", widget: "file", required: false}
           - {label: "Accueil — Texte de la petite carte", name: "vibeText", widget: "text"}
           - {label: "Accueil — Vignette de la petite carte", name: "vibeImage", widget: "file", required: false}
           # ---------- SERVICES ----------

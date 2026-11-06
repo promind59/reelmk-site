@@ -311,6 +311,10 @@ footer .wm{font-family:Anton;font-size:clamp(90px,21vw,360px);line-height:.82;te
 .hero.portrait .bgvid{inset:auto;right:clamp(20px,6vw,100px);top:50%;transform:translateY(-50%);height:min(72%,640px);width:auto;aspect-ratio:9/16;border-radius:26px;opacity:1;z-index:0;box-shadow:0 40px 100px rgba(0,0,0,.55);outline:1px solid rgba(255,255,255,.12)}
 .hero.portrait .vibe{z-index:2;right:calc(clamp(20px,6vw,100px) + 40px);bottom:16%}
 @media (max-width:720px){.hero.portrait .bgvid{inset:0;transform:none;width:100%;height:100%;border-radius:0;opacity:.55;aspect-ratio:auto;outline:0;box-shadow:none}.hero.portrait .vibe{right:auto;left:24px;bottom:24%}}
+
+.hero .bgfull{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:.6}
+.hero.has-bg .scene{display:none}
+.hero.has-bg::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.25) 55%,rgba(0,0,0,.35) 100%),linear-gradient(180deg,transparent 60%,rgba(0,0,0,.55))}
 </style>
 </head>
 <body>
@@ -427,6 +431,7 @@ footer .wm{font-family:Anton;font-size:clamp(90px,21vw,360px);line-height:.82;te
 const DEFAULTS={
   heroTitle:"Je crée des vidéos qui arrêtent le scroll, racontent ton histoire et font vivre ta marque à l'écran.",
   heroVideo:null,
+  heroBg:null,
   vibeText:"On crée une vibe,\npas juste des vidéos.",
   vibeImage:null,
   servicesText:"Du concept au montage final, je construis des contenus vidéo pensés pour les réseaux : rythmés, cinématiques et fidèles à ton identité.",
@@ -493,7 +498,7 @@ function render(){
   const h=$('heroTitle');h.innerHTML='';
   words.forEach((w,i)=>{const s=el('span','w'+(i>=cut?' dim':''),w);s.style.animationDelay=(.15+i*.06)+'s';h.append(s,' ')});
   const hero=$('hero');hero.querySelector('.bgvid')?.remove();
-  const hv=mediaEl(C.heroVideo,{cls:'bgvid'});hero.classList.toggle('has-video',!!hv);if(hv)hero.prepend(hv);hero.classList.remove('portrait');if(hv){const f=()=>{const w=hv.videoWidth||hv.naturalWidth,h=hv.videoHeight||hv.naturalHeight;hero.classList.toggle('portrait',h>w*1.05)};hv.addEventListener(hv.tagName==='VIDEO'?'loadedmetadata':'load',f);f()}
+  const hv=mediaEl(C.heroVideo,{cls:'bgvid'});hero.classList.toggle('has-video',!!hv);if(hv)hero.prepend(hv);hero.querySelector('.bgfull')?.remove();const hb=mediaEl(C.heroBg,{cls:'bgfull'});hero.classList.toggle('has-bg',!!hb);if(hb)hero.prepend(hb);hero.classList.remove('portrait');if(hv){const f=()=>{const w=hv.videoWidth||hv.naturalWidth,h=hv.videoHeight||hv.naturalHeight;hero.classList.toggle('portrait',h>w*1.05)};hv.addEventListener(hv.tagName==='VIDEO'?'loadedmetadata':'load',f);f()}
   $('vibeText').innerHTML='';C.vibeText.split('\n').forEach((l,i)=>{if(i)$('vibeText').append(el('br'));$('vibeText').append(l)});
   const vt=$('vibeThumb');vt.querySelector('.media-fill')?.remove();const vm=mediaEl(C.vibeImage);if(vm)vt.prepend(vm);
   // réseaux (notch + contact)
