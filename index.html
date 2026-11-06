@@ -489,9 +489,14 @@ const el=(t,cls,txt)=>{const e=document.createElement(t);if(cls)e.className=cls;
 const isVid=m=>typeof m==='string'&&/\.(mp4|mov|webm|m4v)$/i.test(m);
 const src=m=>(typeof m==='string'&&/^(\/|https:\/\/)/.test(m.trim()))?encodeURI(m.trim()):null;
 const safeUrl=u=>(typeof u==='string'&&/^https:\/\//i.test(u.trim()))?u.trim():'';
+/* lecture auto robuste (iPhone, mode économie d'énergie) : relance au premier toucher */
+const AUTO=new Set();
+function kickVideos(){AUTO.forEach(v=>{if(!v.isConnected){AUTO.delete(v);return}if(v.paused)v.play().catch(()=>{})})}
+['touchstart','pointerdown','keydown'].forEach(e=>addEventListener(e,kickVideos,{passive:true}));
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)kickVideos()});
 function mediaEl(m,{autoplay=true,cls='media-fill'}={}){
   const s=src(m);if(!s)return null;
-  if(isVid(m)){const v=el('video',cls);v.src=s;v.muted=true;v.loop=true;v.playsInline=true;v.setAttribute('playsinline','');if(autoplay)v.autoplay=true;v.preload='metadata';return v}
+  if(isVid(m)){const v=el('video',cls);v.muted=true;v.defaultMuted=true;v.setAttribute('muted','');v.playsInline=true;v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.loop=true;v.preload=autoplay?'auto':'metadata';if(autoplay){v.autoplay=true;v.setAttribute('autoplay','');AUTO.add(v);v.addEventListener('loadeddata',()=>v.play().catch(()=>{}),{once:true})}v.src=autoplay?s:s+'#t=0.1';return v}
   const i=el('img',cls);i.src=s;i.alt='';i.loading='lazy';return i;
 }
 function merge(base,over){ // fusion prudente des données venant de la base
