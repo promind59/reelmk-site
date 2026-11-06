@@ -1,7 +1,7 @@
 {
   "heroTitle": "Je crée des vidéos qui arrêtent le scroll, racontent ton histoire et font vivre ta marque à l'écran.",
   "heroVideo": "/uploads/inmark-20mo-d7d973.mp4",
-  "heroBg": "/uploads/fond-accueil-nuit.mp4",
+  "heroBg": null,
   "vibeText": "On crée une vibe,\npas juste des vidéos.",
   "vibeImage": null,
   "servicesText": "Du concept au montage final, je construis des contenus vidéo pensés pour les réseaux : rythmés, cinématiques et fidèles à ton identité.",
@@ -131,6 +131,6 @@
   "cB": "commence ici.",
   "email": "contact@reelmk.com",
   "instagram": "https://www.instagram.com/mkwrld.mp4/",
-  "tiktok": "",
+  "tiktok": "https://www.tiktok.com/@mkwrld.mp4",
   "youtube": ""
 }
