@@ -1,0 +1,135 @@
+{
+  "cA": "Ton prochain réel",
+  "cB": "commence ici.",
+  "email": "contact@reelmk.com",
+  "heroTitle": "Je crée des vidéos qui arrêtent le scroll, racontent ton histoire et font vivre ta marque à l'écran.",
+  "heroVideo": null,
+  "vibeText": "On crée une vibe,\npas juste des vidéos.",
+  "vibeImage": null,
+  "instagram": "https://www.instagram.com/mkwrld.mp4/",
+  "tiktok": "",
+  "youtube": "",
+  "manifesto": "Bienvenue dans le MK WORLD. Réel MK, c'est un créateur de contenu vidéo qui transforme chaque idée en image forte, pensée pour capter l'attention et laisser une trace dans le feed.",
+  "pName": "Réel MK",
+  "pRole": "Création digitale · Content creator",
+  "pQuote": "« Chaque vidéo doit donner envie de la regarder une deuxième fois. C'est ça, ma règle. »",
+  "procA": "Quatre étapes.",
+  "procB": "Zéro prise de tête.",
+  "projTitle": "Sélection de réels.",
+  "reelSmall": "Showreel 2026",
+  "reelTitle": "Regarde le réel.",
+  "reelVideo": null,
+  "reelPoster": null,
+  "servicesText": "Du concept au montage final, je construis des contenus vidéo pensés pour les réseaux : rythmés, cinématiques et fidèles à ton identité.",
+  "servicesTitle": "Du concept à l'écran, dès le premier plan.",
+  "services": [
+    {
+      "title": "Reels & TikTok",
+      "big": "9:16",
+      "desc": "Formats verticaux courts, accroche dès la première seconde, sous-titres et sound design.",
+      "image": null
+    },
+    {
+      "title": "Motion design",
+      "big": "",
+      "desc": "Intros de logo, animations 2D/3D, habillage graphique et typographie animée.",
+      "image": "/uploads/promind-intro-9x16.mp4"
+    },
+    {
+      "title": "Montage",
+      "big": "",
+      "desc": "Cut nerveux, transitions, étalonnage et rythme calé sur le son.",
+      "image": null
+    },
+    {
+      "title": "Captation",
+      "big": "",
+      "desc": "Tournage sur le terrain : événements, sport, coulisses, portraits de marque.",
+      "image": null
+    }
+  ],
+  "projects": [
+    {
+      "title": "Match day",
+      "meta": "Captation · Montage",
+      "dur": "0:24",
+      "cat": "sport",
+      "thumb": null,
+      "video": null
+    },
+    {
+      "title": "Studio session",
+      "meta": "Coulisses · Photo",
+      "dur": "0:18",
+      "cat": "brand",
+      "thumb": null,
+      "video": null
+    },
+    {
+      "title": "Logo intro 3D",
+      "meta": "Motion design",
+      "dur": "0:03",
+      "cat": "motion",
+      "thumb": null,
+      "video": null
+    },
+    {
+      "title": "Silhouette",
+      "meta": "Portrait athlète",
+      "dur": "0:30",
+      "cat": "sport",
+      "thumb": null,
+      "video": null
+    },
+    {
+      "title": "Lancement produit",
+      "meta": "Marque · Montage",
+      "dur": "0:21",
+      "cat": "brand",
+      "thumb": null,
+      "video": null
+    },
+    {
+      "title": "Kinetic type",
+      "meta": "Typo animée",
+      "dur": "0:12",
+      "cat": "motion",
+      "thumb": null,
+      "video": null
+    },
+    {
+      "title": "Carrousel animé",
+      "meta": "Réseaux sociaux",
+      "dur": "0:15",
+      "cat": "brand",
+      "thumb": null,
+      "video": null
+    },
+    {
+      "title": "Highlights",
+      "meta": "Sport · Édition",
+      "dur": "0:27",
+      "cat": "sport",
+      "thumb": null,
+      "video": null
+    }
+  ],
+  "steps": [
+    {
+      "title": "Brief",
+      "desc": "On parle de ton objectif, ta cible et l'énergie que tu veux faire passer."
+    },
+    {
+      "title": "Concept",
+      "desc": "Moodboard, structure, accroche : je pose la direction avant d'appuyer sur REC."
+    },
+    {
+      "title": "Tournage & montage",
+      "desc": "Captation, cut, motion, étalonnage et sound design."
+    },
+    {
+      "title": "Livraison",
+      "desc": "Formats prêts à poster, déclinés pour chaque réseau."
+    }
+  ]
+}

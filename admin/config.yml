@@ -1,0 +1,81 @@
+backend:
+  name: github
+  repo: promind59/reelmk-site
+  branch: main
+  commit_messages:
+    update: "Mise à jour du contenu depuis l'admin"
+
+locale: fr
+site_url: https://reelmk.com
+display_url: https://reelmk.com
+logo_url: https://reelmk.com/admin/logo.png
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "site"
+    label: "Site Réel MK"
+    files:
+      - name: "contenu"
+        label: "Contenu du site"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          # ---------- ACCUEIL ----------
+          - {label: "Accueil — Accroche", name: "heroTitle", widget: "text"}
+          - {label: "Accueil — Vidéo de fond (MP4, 20 Mo max)", name: "heroVideo", widget: "file", required: false}
+          - {label: "Accueil — Texte de la petite carte", name: "vibeText", widget: "text"}
+          - {label: "Accueil — Vignette de la petite carte", name: "vibeImage", widget: "file", required: false}
+          # ---------- SERVICES ----------
+          - {label: "Services — Petit texte", name: "servicesText", widget: "text"}
+          - {label: "Services — Grand titre", name: "servicesTitle", widget: "string"}
+          - label: "Services — Cartes"
+            name: "services"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Titre", name: "title", widget: "string"}
+              - {label: "Gros chiffre (optionnel)", name: "big", widget: "string", required: false}
+              - {label: "Description", name: "desc", widget: "text"}
+              - {label: "Image ou vidéo de fond", name: "image", widget: "file", required: false}
+          # ---------- À PROPOS ----------
+          - {label: "À propos — Texte", name: "manifesto", widget: "text"}
+          # ---------- SHOWREEL ----------
+          - {label: "Showreel — Petit titre", name: "reelSmall", widget: "string"}
+          - {label: "Showreel — Titre", name: "reelTitle", widget: "string"}
+          - {label: "Showreel — Vidéo", name: "reelVideo", widget: "file", required: false}
+          - {label: "Showreel — Image de couverture", name: "reelPoster", widget: "image", required: false}
+          - {label: "Profil — Nom", name: "pName", widget: "string"}
+          - {label: "Profil — Rôle", name: "pRole", widget: "string"}
+          - {label: "Profil — Citation", name: "pQuote", widget: "text"}
+          # ---------- PROJETS ----------
+          - {label: "Projets — Titre de la section", name: "projTitle", widget: "string"}
+          - label: "Projets"
+            name: "projects"
+            widget: "list"
+            summary: "{{fields.title}} · {{fields.cat}}"
+            fields:
+              - {label: "Titre", name: "title", widget: "string"}
+              - {label: "Sous-titre", name: "meta", widget: "string"}
+              - {label: "Durée affichée", name: "dur", widget: "string"}
+              - {label: "Catégorie", name: "cat", widget: "select", options: [{label: "Sport", value: "sport"}, {label: "Motion", value: "motion"}, {label: "Marques", value: "brand"}]}
+              - {label: "Vidéo (9:16 conseillé)", name: "video", widget: "file", required: false}
+              - {label: "Miniature (optionnel)", name: "thumb", widget: "image", required: false}
+          # ---------- PROCESS ----------
+          - {label: "Process — Titre (partie noire)", name: "procA", widget: "string"}
+          - {label: "Process — Titre (partie grise)", name: "procB", widget: "string"}
+          - label: "Process — Étapes"
+            name: "steps"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Titre", name: "title", widget: "string"}
+              - {label: "Texte", name: "desc", widget: "text"}
+          # ---------- CONTACT ----------
+          - {label: "Contact — Ligne 1", name: "cA", widget: "string"}
+          - {label: "Contact — Ligne 2 (grise)", name: "cB", widget: "string"}
+          - {label: "E-mail", name: "email", widget: "string"}
+          - {label: "Lien Instagram (https://…)", name: "instagram", widget: "string", required: false}
+          - {label: "Lien TikTok (https://…)", name: "tiktok", widget: "string", required: false}
+          - {label: "Lien YouTube (https://…)", name: "youtube", widget: "string", required: false}
