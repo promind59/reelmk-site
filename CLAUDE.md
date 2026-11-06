@@ -12,3 +12,7 @@ Quand il demande de « traiter ses envois » :
 3. Mettre à jour `content/site.json` (chemins en `/uploads/…`). Garder la structure existante (8 projets, 4 services, 4 étapes) sauf demande contraire.
 4. Dans l'envoi : `statut` → « En ligne », `retour` → une phrase sur ce qui a été fait. Ne pas supprimer les fichiers bruts sans demande.
 5. Un commit clair, push sur `main`, puis vérifier que reelmk.com affiche la nouvelle version.
+
+## Zip « Exporter pour Netlify » (version Claude du site)
+
+Le zip contient `content/site.json` + seulement les nouveaux médias dans `uploads/` (les fichiers déjà en ligne sont référencés directement). Copier ces deux dossiers dans le dépôt (compresser les vidéos comme ci-dessus), pousser. Si `MANQUANTS.txt` existe, garder l'ancienne valeur pour ces champs. Après chaque mise en ligne, mettre à jour la table `online` (id d'asset → `/uploads/…`) dans la page de l'artefact Réel MK, pour que l'export suivant ne retélécharge pas ces fichiers.
