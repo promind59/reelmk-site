@@ -1,6 +1,6 @@
 {
   "heroTitle": "Je crée des vidéos qui arrêtent le scroll, racontent ton histoire et font vivre ta marque à l'écran.",
-  "heroVideo": "/uploads/inmark-20mo-d7d973.mp4",
+  "heroVideo": "/uploads/jd-video-20mo-d0bb89.mp4",
   "heroBg": null,
   "vibeText": "On crée une vibe,\npas juste des vidéos.",
   "vibeImage": null,
@@ -8,7 +8,7 @@
   "servicesTitle": "Du concept à l'écran, dès le premier plan.",
   "services": [
     {
-      "title": "Reels & TikTok",
+      "title": "Design Carrousel ",
       "big": "9:16",
       "desc": "Formats verticaux courts, accroche dès la première seconde, sous-titres et sound design.",
       "image": "/uploads/copie-de-lea-notel-e363ee.jpg"
@@ -23,48 +23,48 @@
       "title": "Montage",
       "big": "",
       "desc": "Cut nerveux, transitions, étalonnage et rythme calé sur le son.",
-      "image": null
+      "image": "/uploads/jd-video-20mo-d0bb89.mp4"
     },
     {
       "title": "Captation",
       "big": "",
       "desc": "Tournage sur le terrain : événements, sport, coulisses, portraits de marque.",
-      "image": null
+      "image": "/uploads/inmark-20mo-d7d973.mp4"
     }
   ],
-  "manifesto": "Bienvenue dans le MK WORLD. Réel MK, c'est un créateur de contenu vidéo qui transforme chaque idée en image forte, pensée pour capter l'attention et laisser une trace dans le feed.",
-  "reelSmall": "Showreel 2026",
+  "manifesto": "Bienvenue chez MK WORLD. Réel MK, c'est un créateur de contenu vidéo qui transforme chaque idée en image forte, pensée pour capter l'attention et laisser une trace dans le feed.",
+  "reelSmall": "Récente Collaboration",
   "reelTitle": "Regarde le réel.",
   "reelVideo": "/uploads/video-20mo-743ce7.mp4",
   "reelPoster": null,
-  "pName": "Réel MK",
+  "pName": "JD sports x Kulturr & Bilouki",
   "pRole": "Création digitale · Content creator",
   "pQuote": "« Chaque vidéo doit donner envie de la regarder une deuxième fois. C'est ça, ma règle. »",
   "projTitle": "Sélection de réels.",
   "projects": [
     {
-      "title": "Match day",
+      "title": "Dior x Dada",
       "meta": "Captation · Montage",
       "dur": "0:24",
-      "cat": "sport",
+      "cat": "brand",
       "thumb": null,
-      "video": null
+      "video": "/uploads/video-450d7db9-20mo-b6be7f.mp4"
     },
     {
-      "title": "Studio session",
-      "meta": "Coulisses · Photo",
+      "title": "Micro JD",
+      "meta": "Coulisses · Évent",
       "dur": "0:18",
       "cat": "brand",
       "thumb": null,
-      "video": null
+      "video": "/uploads/video-b2c91c40-20mo-827e70.mp4"
     },
     {
-      "title": "Logo intro 3D",
-      "meta": "Motion design",
+      "title": "Rnboi & JD sports",
+      "meta": "Backstage",
       "dur": "0:03",
-      "cat": "motion",
+      "cat": "brand",
       "thumb": null,
-      "video": null
+      "video": "/uploads/video-962301aa-20mo-ec7f9a.mp4"
     },
     {
       "title": "Silhouette",
