@@ -106,6 +106,15 @@ collections:
               - {label: "Catégorie", name: "cat", widget: "select", options: [{label: "Sport", value: "sport"}, {label: "Motion", value: "motion"}, {label: "Marques", value: "brand"}]}
               - {label: "Vidéo (9:16 conseillé)", name: "video", widget: "file", required: false}
               - {label: "Miniature (optionnel)", name: "thumb", widget: "image", required: false}
+          - label: "Réels (onglet Réels)"
+            name: "reels"
+            widget: "list"
+            required: false
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Titre", name: "title", widget: "string"}
+              - {label: "Sous-titre", name: "meta", widget: "string", required: false}
+              - {label: "Vidéo (9:16)", name: "video", widget: "file"}
           # ---------- PROCESS ----------
           - {label: "Process — Titre (partie noire)", name: "procA", widget: "string"}
           - {label: "Process — Titre (partie grise)", name: "procB", widget: "string"}

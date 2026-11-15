@@ -107,6 +107,53 @@
       "video": null
     }
   ],
+  "reels": [
+    {
+      "title": "POV : le shooting est fini",
+      "meta": "Coulisses · Studio 808",
+      "video": "/uploads/reel-1.mp4"
+    },
+    {
+      "title": "808 Studio à Lille",
+      "meta": "Studio · Promo",
+      "video": "/uploads/reel-2.mp4"
+    },
+    {
+      "title": "Shooting studio",
+      "meta": "Photo · Coulisses",
+      "video": "/uploads/reel-3.mp4"
+    },
+    {
+      "title": "Portrait studio",
+      "meta": "Captation · Montage",
+      "video": "/uploads/reel-4.mp4"
+    },
+    {
+      "title": "Quatre tenues",
+      "meta": "Mode · Montage",
+      "video": "/uploads/reel-5.mp4"
+    },
+    {
+      "title": "Shooting néon",
+      "meta": "Coulisses · Montage",
+      "video": "/uploads/reel-6.mp4"
+    },
+    {
+      "title": "JD Sports Tours",
+      "meta": "L'heure Tranquille · Ouverture",
+      "video": "/uploads/reel-7.mp4"
+    },
+    {
+      "title": "JD Sports Créteil Soleil",
+      "meta": "Ouverture magasin",
+      "video": "/uploads/reel-8.mp4"
+    },
+    {
+      "title": "Babanzila Meshak",
+      "meta": "Portrait athlète",
+      "video": "/uploads/reel-9.mp4"
+    }
+  ],
   "procA": "Quatre étapes.",
   "procB": "Zéro prise de tête.",
   "steps": [

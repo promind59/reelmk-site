@@ -513,6 +513,7 @@ const DEFAULTS={
     {title:"Carrousel animé",meta:"Réseaux sociaux",dur:"0:15",cat:"brand",thumb:null,video:null},
     {title:"Highlights",meta:"Sport · Édition",dur:"0:27",cat:"sport",thumb:null,video:null}
   ],
+  reels:[],
   procA:"Quatre étapes.", procB:"Zéro prise de tête.",
   steps:[
     {title:"Brief",desc:"On parle de ton objectif, ta cible et l'énergie que tu veux faire passer."},
@@ -550,7 +551,7 @@ function mediaEl(m,{autoplay=true,cls='media-fill'}={}){
   const i=el('img',cls);i.src=s;i.alt='';i.loading='lazy';return i;
 }
 function merge(base,over){ // fusion prudente des données venant de la base
-  if(Array.isArray(base)){return Array.isArray(over)?over.map((o,i)=>merge(structuredClone(base[i]??base[0]),o)):base}
+  if(Array.isArray(base)){return Array.isArray(over)?over.map((o,i)=>merge(structuredClone(base[i]??base[0]??{title:"",meta:"",video:null}),o)):base}
   if(base&&typeof base==='object'){const o={};for(const k in base)o[k]=over&&k in over?merge(base[k],over[k]):base[k];return o}
   if(base===null)return (typeof over==='string'&&over.trim())?over:null;
   return typeof over===typeof base?over:base;
@@ -663,6 +664,7 @@ fetch('/content/site.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(
   function items(){const out=[],seen=new Set();
     const add=(m,t,s)=>{if(!m||!isVid(m))return;const u=src(m);if(!u||seen.has(u))return;seen.add(u);out.push({u,t:t||'',s:s||''})};
     (C.projects||[]).forEach(p=>add(p.video,p.title,p.meta));
+    (C.reels||[]).forEach(r=>add(r.video,r.title,r.meta));
     add(C.reelVideo,C.reelTitle,C.reelSmall);
     add(C.heroVideo,'Réel MK','À la une');
     (C.services||[]).forEach(s=>add(s.image,s.title,'Services'));
