@@ -110,6 +110,7 @@ collections:
             name: "reels"
             widget: "list"
             required: false
+            hint: "Les vidéos qui défilent dans la page Réels, dans cet ordre. Glisse pour réordonner, ✕ pour retirer. Liste vide = projets, showreel et Services automatiquement."
             summary: "{{fields.title}}"
             fields:
               - {label: "Titre", name: "title", widget: "string"}

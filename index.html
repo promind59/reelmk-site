@@ -663,8 +663,9 @@ fetch('/content/site.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(
 
   function items(){const out=[],seen=new Set();
     const add=(m,t,s)=>{if(!m||!isVid(m))return;const u=src(m);if(!u||seen.has(u))return;seen.add(u);out.push({u,t:t||'',s:s||''})};
+    // liste « Réels » remplie dans l'admin : c'est elle qui décide (ordre compris)
+    if((C.reels||[]).some(r=>r&&r.video)){C.reels.forEach(r=>r&&add(r.video,r.title,r.meta));return out}
     (C.projects||[]).forEach(p=>add(p.video,p.title,p.meta));
-    (C.reels||[]).forEach(r=>add(r.video,r.title,r.meta));
     add(C.reelVideo,C.reelTitle,C.reelSmall);
     add(C.heroVideo,'Réel MK','À la une');
     (C.services||[]).forEach(s=>add(s.image,s.title,'Services'));
