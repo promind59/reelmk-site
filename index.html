@@ -406,6 +406,11 @@ footer .wm{font-family:Anton;font-size:clamp(90px,21vw,360px);line-height:.82;te
   .swipe{bottom:20px}
   .hero .vibe{bottom:96px}
 }
+
+/* iPhone : la vidéo ne dépasse plus des coins arrondis */
+.hero{clip-path:inset(0 round var(--radius));-webkit-mask-image:-webkit-radial-gradient(white,black);transform:translateZ(0)}
+.hero .bgvid,.hero .bgfull{-webkit-backface-visibility:hidden;backface-visibility:hidden}
+@media (max-width:720px){.hero{clip-path:inset(0 round 26px)}.hero.portrait .bgvid{border-radius:26px}}
 </style>
 </head>
 <body>
