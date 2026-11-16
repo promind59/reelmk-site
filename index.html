@@ -397,6 +397,15 @@ footer .wm{font-family:Anton;font-size:clamp(90px,21vw,360px);line-height:.82;te
 .notch a{width:26px;height:26px;opacity:1}
 .notch a svg{width:24px;height:24px}
 .socials a svg{width:18px;height:18px}
+
+/* accueil mobile : carte vidéo détachée des barres haut et bas */
+@media (max-width:720px){
+  .hero-wrap{height:100svh;min-height:560px;padding:calc(80px + env(safe-area-inset-top)) 14px calc(96px + env(safe-area-inset-bottom))}
+  .hero{border-radius:26px}
+  .hero h1{top:34px;left:22px;right:22px}
+  .swipe{bottom:20px}
+  .hero .vibe{bottom:96px}
+}
 </style>
 </head>
 <body>
