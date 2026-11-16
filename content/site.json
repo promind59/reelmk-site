@@ -1,29 +1,23 @@
 {
   "heroTitle": "Je crée des vidéos qui arrêtent le scroll, racontent ton histoire et font vivre ta marque à l'écran.",
-  "heroVideo": "/uploads/accueil-carte.mp4",
+  "heroVideo": "/uploads/video-b2c91c40-20mo-827e70.mp4",
   "heroBg": null,
   "vibeText": "On crée une vibe,\npas juste des vidéos.",
-  "vibeImage": "/uploads/jd-video-20mo-d0bb89.mp4",
+  "vibeImage": "/uploads/inmark-fb9d6f.mp4",
   "servicesText": "Du concept au montage final, je construis des contenus vidéo pensés pour les réseaux : rythmés, cinématiques et fidèles à ton identité.",
   "servicesTitle": "Du concept à l'écran, dès le premier plan.",
   "services": [
     {
       "title": "Design Carrousel ",
       "big": "9:16",
-      "desc": "Formats verticaux courts, accroche dès la première seconde, sous-titres et sound design.",
+      "desc": "Accroche dès la première seconde",
       "image": "/uploads/copie-de-lea-notel-e363ee.jpg"
-    },
-    {
-      "title": "Motion design",
-      "big": "",
-      "desc": "Intros de logo, animations 2D/3D, habillage graphique et typographie animée.",
-      "image": "/uploads/promind-intro-v5-9x16-0edccf.mp4"
     },
     {
       "title": "Montage",
       "big": "",
-      "desc": "Cut nerveux, transitions, étalonnage et rythme calé sur le son.",
-      "image": "/uploads/jd-video-20mo-d0bb89.mp4"
+      "desc": "Cut nerveux, transitions, étalonnage…",
+      "image": "/uploads/video-20mo-4c7d9d.mp4"
     },
     {
       "title": "Captation",
@@ -104,14 +98,24 @@
       "dur": "0:27",
       "cat": "sport",
       "thumb": null,
-      "video": null
+      "video": "/uploads/video-20mo-4c7d9d.mp4"
     }
   ],
   "reels": [
     {
+      "title": "JD Sports Tours",
+      "meta": "L'heure Tranquille · Ouverture",
+      "video": "/uploads/reel-7.mp4"
+    },
+    {
       "title": "Dior x Dada",
       "meta": "Captation · Montage",
       "video": "/uploads/video-450d7db9-20mo-b6be7f.mp4"
+    },
+    {
+      "title": "Bilouki & Kulturr — JD sport",
+      "meta": "Campagne ",
+      "video": "/uploads/video-20mo-743ce7.mp4"
     },
     {
       "title": "Micro JD",
@@ -119,19 +123,29 @@
       "video": "/uploads/video-b2c91c40-20mo-827e70.mp4"
     },
     {
-      "title": "Rnboi & JD sports",
+      "title": "Quatre tenues",
+      "meta": "Mode · Montage",
+      "video": "/uploads/reel-5.mp4"
+    },
+    {
+      "title": "Interview Baba performsport",
+      "meta": "Portrait athlète",
+      "video": "/uploads/reel-9.mp4"
+    },
+    {
+      "title": "Rnboi / Elysha / Djibril 94 & JD sports",
       "meta": "Backstage",
       "video": "/uploads/video-962301aa-20mo-ec7f9a.mp4"
+    },
+    {
+      "title": "Visuel basket-ball",
+      "meta": "Captation",
+      "video": "/uploads/inmark-20mo-d7d973.mp4"
     },
     {
       "title": "POV : le shooting est fini",
       "meta": "Coulisses · Studio 808",
       "video": "/uploads/reel-1.mp4"
-    },
-    {
-      "title": "808 Studio à Lille",
-      "meta": "Studio · Promo",
-      "video": "/uploads/reel-2.mp4"
     },
     {
       "title": "Shooting studio",
@@ -144,49 +158,14 @@
       "video": "/uploads/reel-4.mp4"
     },
     {
-      "title": "Quatre tenues",
-      "meta": "Mode · Montage",
-      "video": "/uploads/reel-5.mp4"
-    },
-    {
       "title": "Shooting néon",
       "meta": "Coulisses · Montage",
       "video": "/uploads/reel-6.mp4"
     },
     {
-      "title": "JD Sports Tours",
-      "meta": "L'heure Tranquille · Ouverture",
-      "video": "/uploads/reel-7.mp4"
-    },
-    {
       "title": "JD Sports Créteil Soleil",
       "meta": "Ouverture magasin",
       "video": "/uploads/reel-8.mp4"
-    },
-    {
-      "title": "Babanzila Meshak",
-      "meta": "Portrait athlète",
-      "video": "/uploads/reel-9.mp4"
-    },
-    {
-      "title": "Regarde le réel.",
-      "meta": "Récente Collaboration",
-      "video": "/uploads/video-20mo-743ce7.mp4"
-    },
-    {
-      "title": "Réel MK",
-      "meta": "À la une",
-      "video": "/uploads/accueil-carte.mp4"
-    },
-    {
-      "title": "Motion design",
-      "meta": "Services",
-      "video": "/uploads/promind-intro-v5-9x16-0edccf.mp4"
-    },
-    {
-      "title": "Montage",
-      "meta": "Services",
-      "video": "/uploads/jd-video-20mo-d0bb89.mp4"
     },
     {
       "title": "Captation",

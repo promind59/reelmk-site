@@ -494,7 +494,6 @@ const DEFAULTS={
   servicesTitle:"Du concept à l'écran, dès le premier plan.",
   services:[
     {title:"Reels & TikTok",big:"9:16",desc:"Formats verticaux courts, accroche dès la première seconde, sous-titres et sound design.",image:null},
-    {title:"Motion design",big:"",desc:"Intros de logo, animations 2D/3D, habillage graphique et typographie animée.",image:null},
     {title:"Montage",big:"",desc:"Cut nerveux, transitions, étalonnage et rythme calé sur le son.",image:null},
     {title:"Captation",big:"",desc:"Tournage sur le terrain : événements, sport, coulisses, portraits de marque.",image:null}
   ],
@@ -645,8 +644,8 @@ fetch('/content/site.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(
 </div>
 <nav class="tabbar" id="tabbar" aria-label="Navigation">
   <button data-tab="home" class="on" aria-label="Accueil"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3.2 3 10.4V20a1.6 1.6 0 0 0 1.6 1.6h4.2a.8.8 0 0 0 .8-.8v-4.6a2.4 2.4 0 0 1 4.8 0v4.6a.8.8 0 0 0 .8.8h4.2A1.6 1.6 0 0 0 21 20v-9.6z"/></svg><span class="lbl">Accueil</span></button>
-  <button data-tab="reels" aria-label="Réels"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M10 8.6v6.8l5.6-3.4z" fill="currentColor" stroke-linejoin="round"/></svg><span class="lbl">Réels</span></button>
-  <button data-tab="contact" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21.5 3 9.6 14.4M21.5 3l-7.4 18-4.5-6.6L3 10z"/></svg><span class="lbl">Contact</span></button>
+  <button data-tab="reels" aria-label="Réels"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M3 10h18v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M3.3 9.6 2.7 7a2 2 0 0 1 1.5-2.4l13.6-3.1a2 2 0 0 1 2.4 1.5l.5 2.3z"/><path d="m7.4 4.2 2.9 3.8M12.6 3l2.9 3.8"/></svg><span class="lbl">Réels</span></button>
+  <button data-tab="contact" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7.5 8 6 8-6"/></svg><span class="lbl">Contact</span></button>
   <button data-tab="about" aria-label="À propos"><span class="av"><img id="tabLogo" alt=""></span><span class="lbl">À propos</span></button>
 </nav>
 
