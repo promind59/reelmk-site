@@ -16,3 +16,7 @@ Quand il demande de « traiter ses envois » :
 ## Zip « Exporter pour Netlify » (version Claude du site)
 
 Le zip contient `content/site.json` + seulement les nouveaux médias dans `uploads/` (les fichiers déjà en ligne sont référencés directement). Copier ces deux dossiers dans le dépôt (compresser les vidéos comme ci-dessus), pousser. Si `MANQUANTS.txt` existe, garder l'ancienne valeur pour ces champs. Après chaque mise en ligne, mettre à jour la table `online` (id d'asset → `/uploads/…`) dans la page de l'artefact Réel MK, pour que l'export suivant ne retélécharge pas ces fichiers.
+
+## Images d'aperçu des vidéos
+
+Chaque vidéo `uploads/<nom>.mp4` a une image `uploads/posters/<nom>.jpg` (première image, 720 px de large max) qui s'affiche tout de suite pendant le chargement. Pour chaque nouvelle vidéo : `ffmpeg -ss 0.05 -i uploads/<nom>.mp4 -frames:v 1 -vf "scale='min(720,iw)':-2" -q:v 4 uploads/posters/<nom>.jpg`.
