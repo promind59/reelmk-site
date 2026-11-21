@@ -411,6 +411,15 @@ footer .wm{font-family:Anton;font-size:clamp(90px,21vw,360px);line-height:.82;te
 .hero{clip-path:inset(0 round var(--radius));-webkit-mask-image:-webkit-radial-gradient(white,black);transform:translateZ(0)}
 .hero .bgvid,.hero .bgfull{-webkit-backface-visibility:hidden;backface-visibility:hidden}
 @media (max-width:720px){.hero{clip-path:inset(0 round 26px)}.hero.portrait .bgvid{border-radius:26px}}
+
+/* accueil mobile : vidéo lumineuse (plus de voile gris) */
+@media (max-width:720px){
+  .hero.portrait .bgvid{opacity:1}
+  .hero.portrait::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.42) 0%,rgba(0,0,0,.12) 38%,transparent 55%,transparent 72%,rgba(0,0,0,.28) 100%)}
+  .hero h1,.hero .vibe,.hero .swipe,.hero .notch,.hero .watermark{z-index:2}
+  .hero h1{text-shadow:0 2px 18px rgba(0,0,0,.35)}
+  .hero h1 .dim{color:rgba(255,255,255,.7)}
+}
 </style>
 </head>
 <body>
